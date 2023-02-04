@@ -1,7 +1,6 @@
 name: FoundBiome
-main: net.alureon.foundbiome.FoundBiome
+main: net.nucloid.foundbiome
 version: 0.11
-api-version: 1.93
 author: Nucloid
 description: Allows players to see when they change biomes, and what biomes they have visited.
 

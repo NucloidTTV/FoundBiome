@@ -1,4 +1,4 @@
-package net.alureon.foundbiome.file;
+package net.nucloid.foundbiome;
 
 final class Paths {
 

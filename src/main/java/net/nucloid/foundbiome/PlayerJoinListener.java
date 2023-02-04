@@ -1,6 +1,5 @@
-package net.alureon.foundbiome.listener;
+package net.nucloid.foundbiome;
 
-import net.alureon.foundbiome.FoundBiome;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

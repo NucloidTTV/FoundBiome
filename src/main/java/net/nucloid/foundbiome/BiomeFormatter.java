@@ -1,4 +1,4 @@
-package net.alureon.foundbiome.util;
+package net.nucloid.foundbiome;
 
 import org.apache.commons.text.WordUtils;
 import org.bukkit.block.Biome;

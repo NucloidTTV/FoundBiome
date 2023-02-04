@@ -1,10 +1,5 @@
-package net.alureon.foundbiome;
+package net.nucloid.foundbiome;
 
-import net.alureon.foundbiome.command.CommandHandler;
-import net.alureon.foundbiome.file.FileHandler;
-import net.alureon.foundbiome.handler.MapHandler;
-import net.alureon.foundbiome.listener.PlayerJoinListener;
-import net.alureon.foundbiome.listener.PlayerMoveListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;

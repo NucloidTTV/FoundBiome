@@ -1,6 +1,5 @@
-package net.alureon.foundbiome.handler;
+package net.nucloid.foundbiome;
 
-import net.alureon.foundbiome.FoundBiome;
 import org.bukkit.block.Biome;
 import org.bukkit.entity.Player;
 import org.json.simple.JSONObject;

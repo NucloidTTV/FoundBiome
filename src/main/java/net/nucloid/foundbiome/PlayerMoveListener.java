@@ -1,8 +1,5 @@
-package net.alureon.foundbiome.listener;
+package net.nucloid.foundbiome;
 
-import net.alureon.foundbiome.FoundBiome;
-import net.alureon.foundbiome.util.BiomeFormatter;
-import net.alureon.foundbiome.util.BiomeLists;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Biome;
 import org.bukkit.entity.Player;

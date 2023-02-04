@@ -1,6 +1,4 @@
-package net.alureon.foundbiome.file;
-
-import net.alureon.foundbiome.FoundBiome;
+package net.nucloid.foundbiome;
 
 public class FileHandler {
 
