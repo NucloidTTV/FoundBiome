@@ -2,46 +2,46 @@ package net.alureon.foundbiome.util;
 
 import org.bukkit.block.Biome;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class BiomeLists {
 
-    /**
-     * These biomes should never be used for anything.  They don't count towards the achievement, and there is
-     * no reason to ever announce them.
-     */
-    private static final List<Biome> completelyDisabledBiomes = Arrays.asList(Biome.THE_VOID, Biome.MOUNTAIN_EDGE, Biome.DEEP_WARM_OCEAN);
+	/**
+	 * These biomes should never be used for anything. They don't count towards the
+	 * achievement, and there is no reason to ever announce them.
+	 */
+	// private static final List<Biome> completelyDisabledBiomes =
+	// Arrays.asList(Biome.THE_VOID, Biome.MOUNTAIN_EDGE, Biome.DEEP_WARM_OCEAN);
 
-    /**
-     * Gets the list of disabled biomes.
-     * @return the list of disabled biomes.
-     */
-    public static List<Biome> getDisabledBiomes() {
-        return completelyDisabledBiomes;
-    }
+	/**
+	 * Gets the list of disabled biomes.
+	 * 
+	 * @return the list of disabled biomes.
+	 */
+	// public static List<Biome> getDisabledBiomes() {
+	// return completelyDisabledBiomes;
+	// }
 
-    /**
-     * Checks if the biome is needed for the achievement.
-     * @return true if the biome DOES NOT contribute to the vanilla achievement.
-     */
-    public static boolean isNonAchievementBiome(Biome b) {
-    	switch(b) {
+	/**
+	 * Checks if the biome is needed for the achievement.
+	 * 
+	 * @return true if the biome DOES NOT contribute to the vanilla achievement.
+	 */
+	public static boolean isNonAchievementBiome(Biome b) {
+		switch (b) {
 		case BADLANDS:
 			return false;
-		case BADLANDS_PLATEAU:
+		case BAMBOO_JUNGLE:
 			return false;
 		case BEACH:
 			return false;
 		case BIRCH_FOREST:
 			return false;
-		case BIRCH_FOREST_HILLS:
-			return false;
 		case COLD_OCEAN:
+			return false;
+		case CRIMSON_FOREST:
 			return false;
 		case DARK_FOREST:
 			return false;
-		case DARK_FOREST_HILLS:
+		case DEEP_DARK:
 			return true;
 		case DEEP_COLD_OCEAN:
 			return false;
@@ -51,14 +51,10 @@ public class BiomeLists {
 			return false;
 		case DEEP_OCEAN:
 			return true;
-		case DEEP_WARM_OCEAN:
-			return true;
 		case DESERT:
 			return false;
-		case DESERT_HILLS:
+		case DRIPSTONE_CAVES:
 			return false;
-		case DESERT_LAKES:
-			return true;
 		case END_BARRENS:
 			return true;
 		case END_HIGHLANDS:
@@ -75,47 +71,35 @@ public class BiomeLists {
 			return true;
 		case FROZEN_RIVER:
 			return false;
-		case GIANT_SPRUCE_TAIGA:
+		case FROZEN_PEAKS:
 			return true;
-		case GIANT_SPRUCE_TAIGA_HILLS:
-			return true;
-		case GIANT_TREE_TAIGA:
-			return false;
-		case GIANT_TREE_TAIGA_HILLS:
-			return false;
-		case GRAVELLY_MOUNTAINS:
+		case GROVE:
 			return true;
 		case ICE_SPIKES:
 			return true;
 		case JUNGLE:
 			return false;
-		case JUNGLE_EDGE:
-			return false;
-		case JUNGLE_HILLS:
+		case JAGGED_PEAKS:
 			return false;
 		case LUKEWARM_OCEAN:
 			return false;
-		case MODIFIED_BADLANDS_PLATEAU:
+		case LUSH_CAVES:
 			return true;
-		case MODIFIED_GRAVELLY_MOUNTAINS:
+		case MANGROVE_SWAMP:
 			return true;
-		case MODIFIED_JUNGLE:
-			return true;
-		case MODIFIED_JUNGLE_EDGE:
-			return true;
-		case MODIFIED_WOODED_BADLANDS_PLATEAU:
-			return true;
-		case MOUNTAINS:
-			return false;
-		case MOUNTAIN_EDGE:
+		case MEADOW:
 			return true;
 		case MUSHROOM_FIELDS:
 			return false;
-		case MUSHROOM_FIELD_SHORE:
+		case NETHER_WASTES:
 			return false;
-		case NETHER:
-			return true;
 		case OCEAN:
+			return true;
+		case OLD_GROWTH_BIRCH_FOREST:
+			return true;
+		case OLD_GROWTH_PINE_TAIGA:
+			return true;
+		case OLD_GROWTH_SPRUCE_TAIGA:
 			return true;
 		case PLAINS:
 			return false;
@@ -125,56 +109,50 @@ public class BiomeLists {
 			return false;
 		case SAVANNA_PLATEAU:
 			return false;
-		case SHATTERED_SAVANNA:
-			return true;
-		case SHATTERED_SAVANNA_PLATEAU:
-			return true;
 		case SMALL_END_ISLANDS:
 			return true;
 		case SNOWY_BEACH:
 			return false;
-		case SNOWY_MOUNTAINS:
+		case SNOWY_PLAINS:
+			return false;
+		case SNOWY_SLOPES:
 			return false;
 		case SNOWY_TAIGA:
 			return false;
-		case SNOWY_TAIGA_HILLS:
+		case SOUL_SAND_VALLEY:
 			return false;
-		case SNOWY_TAIGA_MOUNTAINS:
+		case SPARSE_JUNGLE:
 			return true;
-		case SNOWY_TUNDRA:
+		case STONY_PEAKS:
 			return false;
-		case STONE_SHORE:
+		case STONY_SHORE:
 			return false;
 		case SUNFLOWER_PLAINS:
 			return true;
 		case SWAMP:
 			return false;
-		case SWAMP_HILLS:
-			return true;
 		case TAIGA:
 			return false;
-		case TAIGA_HILLS:
-			return false;
-		case TAIGA_MOUNTAINS:
-			return true;
-		case TALL_BIRCH_FOREST:
-			return true;
-		case TALL_BIRCH_HILLS:
-			return true;
 		case THE_END:
 			return true;
 		case THE_VOID:
 			return true;
 		case WARM_OCEAN:
 			return false;
-		case WOODED_BADLANDS_PLATEAU:
+		case WARPED_FOREST:
 			return false;
-		case WOODED_HILLS:
+		case WINDSWEPT_FOREST:
 			return false;
-		case WOODED_MOUNTAINS:
+		case WINDSWEPT_GRAVELLY_HILLS:
+			return false;
+		case WINDSWEPT_HILLS:
+			return false;
+		case WINDSWEPT_SAVANNA:
+			return false;
+		case WOODED_BADLANDS:
 			return false;
 		default:
 			return true;
-    	}
-    }
+		}
+	}
 }

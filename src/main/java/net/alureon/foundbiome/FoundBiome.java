@@ -27,26 +27,26 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class FoundBiome extends JavaPlugin {
 
-    private final PlayerJoinListener joinListener = new PlayerJoinListener(this);
-    private final PlayerMoveListener moveListener = new PlayerMoveListener(this);
-    private final CommandHandler commandHandler = new CommandHandler(this);
-    private final MapHandler mapHandler = new MapHandler(this);
-    private final FileHandler fh = new FileHandler(this);
+	private final PlayerJoinListener joinListener = new PlayerJoinListener(this);
+	private final PlayerMoveListener moveListener = new PlayerMoveListener(this);
+	private final CommandHandler commandHandler = new CommandHandler(this);
+	private final MapHandler mapHandler = new MapHandler(this);
+	private final FileHandler fh = new FileHandler(this);
 
-    public void onEnable() {
-        fh.checkFiles();
-        PluginManager pm = Bukkit.getServer().getPluginManager();
-        pm.registerEvents(joinListener, this);
-        pm.registerEvents(moveListener, this);
-        getCommand("fb").setExecutor(commandHandler);
-    }
+	public void onEnable() {
+		fh.checkFiles();
+		PluginManager pm = Bukkit.getServer().getPluginManager();
+		pm.registerEvents(joinListener, this);
+		pm.registerEvents(moveListener, this);
+		getCommand("fb").setExecutor(commandHandler);
+	}
 
-    public MapHandler getMapHandler() {
-        return mapHandler;
-    }
+	public MapHandler getMapHandler() {
+		return mapHandler;
+	}
 
-    public FileHandler getFileHandler() {
-        return this.fh;
-    }
+	public FileHandler getFileHandler() {
+		return this.fh;
+	}
 
 }
