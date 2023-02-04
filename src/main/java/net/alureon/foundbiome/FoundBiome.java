@@ -34,6 +34,7 @@ public class FoundBiome extends JavaPlugin {
 	private final FileHandler fh = new FileHandler(this);
 
 	public void onEnable() {
+		getLogger().info("[Found Biome] Is now running.");
 		fh.checkFiles();
 		PluginManager pm = Bukkit.getServer().getPluginManager();
 		pm.registerEvents(joinListener, this);
