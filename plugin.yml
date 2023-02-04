@@ -1,6 +1,6 @@
 name: FoundBiome
-main: net.nucloid.foundbiome
-version: 0.11
+main: net.nucloid.foundbiome.FoundBiome
+version: 0.1
 author: Nucloid
 description: Allows players to see when they change biomes, and what biomes they have visited.
 
